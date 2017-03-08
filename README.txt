@@ -64,6 +64,12 @@ If the core unmixing is used, the M and F values will need to be recomputed.  Th
 This code is copyright 2017 Carnegie Mellon University, and can be freely used and modified.  The code was written by Theodore Roman, under the supervision of advisor Russell Schwartz.  
 
 
+
+Data
+--------
+Data can be accessed at https://cmu.box.com/s/31xwo01wgca65ixi7c1suzdv6gvh5okp
+
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
