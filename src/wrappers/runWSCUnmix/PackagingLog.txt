@@ -1,0 +1,76 @@
+ant:
+<ant>
+  <mkdir dir="/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_redistribution" />
+  <mkdir dir="/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing" />
+  <mkdir dir="/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_redistribution_files_only" />
+</ant>
+mcc -o runWSCUnmix -W main:runWSCUnmix -T link:exe -d /home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing -v /home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix.m 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers" to
+Compiler path instance.] 
+Parsing file "/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 55 temporary MEX authorization files.
+Removing: '/tmp/01addeDMVQ6_6877.auth'.
+Removing: '/tmp/01addb505yR_6877.auth'.
+Removing: '/tmp/01addOo0khC_6877.auth'.
+Removing: '/tmp/01addBDqDZm_6877.auth'.
+Removing: '/tmp/01addaVbZH7_6877.auth'.
+Removing: '/tmp/01addN0poqS_6877.auth'.
+Removing: '/tmp/01addSeHP8C_6877.auth'.
+Removing: '/tmp/01addhzekRn_6877.auth'.
+Removing: '/tmp/01addokgTz8_6877.auth'.
+Removing: '/tmp/01addP1CviT_6877.auth'.
+Removing: '/tmp/01add61pb1D_6877.auth'.
+Removing: '/tmp/01addDA0UJo_6877.auth'.
+Removing: '/tmp/01addE02Hs9_6877.auth'.
+Removing: '/tmp/01addvllybU_6877.auth'.
+Removing: '/tmp/01addcB7sUE_6877.auth'.
+Removing: '/tmp/01addfi8qDp_6877.auth'.
+Removing: '/tmp/01addiBUuma_6877.auth'.
+Removing: '/tmp/01addXxZB5U_6877.auth'.
+Removing: '/tmp/01addyytMOF_6877.auth'.
+Removing: '/tmp/01addhLD2xq_6877.auth'.
+Removing: '/tmp/01add2obmhb_6877.auth'.
+Removing: '/tmp/01add76bJ0V_6877.auth'.
+Removing: '/tmp/01addszs9JG_6877.auth'.
+Removing: '/tmp/01addZbfEtr_6877.auth'.
+Removing: '/tmp/01addYechdc_6877.auth'.
+Removing: '/tmp/01add1zDXWW_6877.auth'.
+Removing: '/tmp/01addScvNGH_6877.auth'.
+Removing: '/tmp/01add1iHGqs_6877.auth'.
+Removing: '/tmp/01addS5NGad_6877.auth'.
+Removing: '/tmp/01addIGSMUX_6877.auth'.
+Removing: '/tmp/01addy60VEI_6877.auth'.
+Removing: '/tmp/01add8ad8ot_6877.auth'.
+Removing: '/tmp/01addPi0s9d_6877.auth'.
+Removing: '/tmp/01addqEcUTY_6877.auth'.
+Removing: '/tmp/01addMvxoEJ_6877.auth'.
+Removing: '/tmp/01addTI7Xou_6877.auth'.
+Removing: '/tmp/01add4qPA9e_6877.auth'.
+Removing: '/tmp/01addYP1kUZ_6877.auth'.
+Removing: '/tmp/01addeoCaFK_6877.auth'.
+Removing: '/tmp/01addCMk3pv_6877.auth'.
+Removing: '/tmp/01addRb8Yag_6877.auth'.
+Removing: '/tmp/01addUIE6Z0_6877.auth'.
+Removing: '/tmp/01addZLKlSL_6877.auth'.
+Removing: '/tmp/01addEjLEKw_6877.auth'.
+Removing: '/tmp/01addhOr7Ch_6877.auth'.
+Removing: '/tmp/01addKYpIv2_6877.auth'.
+Removing: '/tmp/01add1ILxxN_6877.auth'.
+Removing: '/tmp/01addaLJozy_6877.auth'.
+Removing: '/tmp/01addlZDFPR_6877.auth'.
+Removing: '/tmp/01addBowiBj_6877.auth'.
+Removing: '/tmp/01add8UgyD4_6877.auth'.
+Removing: '/tmp/01addJnhUFP_6877.auth'.
+Removing: '/tmp/01addQukiIA_6877.auth'.
+Removing: '/tmp/01addfzFHKl_6877.auth'.
+Removing: '/tmp/01addYdE9M6_6877.auth'.
+Generating file "/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing/readme.txt".
+Generating file "/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing/run_runWSCUnmix.sh".
+Packaging...
+Creating the bundle...
+Web based installer created at /home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_redistribution/MyAppInstaller_web.install.
+Packaging complete.
+Elapsed packaging time was: 55 seconds.

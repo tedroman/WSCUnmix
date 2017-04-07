@@ -1,0 +1,267 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="2316280900" file="/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix.prj" location="/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers" name="runWSCUnmix" preferred-package-location="/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_redistribution" preferred-package-type="package.type.install" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>runWSCUnmix</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.1</param.version>
+    <param.authnamewatermark>Theodore Roman</param.authnamewatermark>
+    <param.email>troman@andrew.cmu.edu</param.email>
+    <param.company>Carnegie Mellon University</param.company>
+    <param.summary>This software presents a method to unmix data point clouds into simplicial complexes</param.summary>
+    <param.description>The method utilizes an optimization of a negative log likelihood function based on two parts -- a conditional term for the fit of the data to the model using a weighted distance function, and a prior term for the size of the model in terms of minimum spanning tree.  The minimum spanning tree model relates to a minimum evolution model for biological data.  The specified application for this program is biomolecular data in the context of cancer evolution.</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.net.saved.interface />
+    <param.installpath.string>/Carnegie_Mellon_University/runWSCUnmix/</param.installpath.string>
+    <param.installpath.combo>option.installpath.user</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>${PROJECT_ROOT}/runWSCUnmix/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/runWSCUnmix/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/runWSCUnmix/for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.screenshot />
+      <param.guid />
+      <param.net.saved.interface />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/runWSCUnmix.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/2-stage medoidshift/doubleshift.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/2-stage medoidshift/get_path_metric.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/2-stage medoidshift/get_path_metric_squared.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/2-stage medoidshift/medoidshift.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/MVES_2009/MVES_2009/MVES.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/Amul.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/PopK.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/adendotd.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/adendotd.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/adenscale.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/asmDxq.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/blkchol.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/blkchol.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/bwblkslv.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/bwblkslv.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/bwdpr1.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/bwdpr1.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/checkpars.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/cholsplit.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/choltmpsiz.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/ddot.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/ddot.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/deninfac.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/dpr1fact.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/dpr1fact.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/eigK.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/eigK.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/extractA.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/extractA.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/eyeK.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/eyeK.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/findblks.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/findblks.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/finsymbden.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/finsymbden.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/frameit.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/fwblkslv.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/fwblkslv.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/fwdpr1.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/fwdpr1.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getDAtm.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getada.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getada1.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getada1.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getada2.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getada2.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getada3.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getada3.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getdense.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/getsymbada.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/givensrot.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/givensrot.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/incorder.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/incorder.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/invcholfac.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/invcholfac.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/iswnbr.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/iswnbr.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/loopPcg.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/makereal.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/makereal.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/maxstep.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/minpsdeig.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/my_fprintf.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/optstep.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/ordmmdmex.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/ordmmdmex.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/partitA.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/partitA.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/postprocessSDP.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/posttransfo.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/preprocessSDP.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/pretransfo.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdeig.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdfactor.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdframeit.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdinvjmul.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdinvjmul.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdinvscale.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdjmul.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/psdscale.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qblkmul.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qblkmul.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qframeit.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qinvjmul.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qjmul.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qrK.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qreshape.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/qreshape.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/quadadd.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/quadadd.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/rotlorentz.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sddir.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sdfactor.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sdinit.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sedumi.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sortnnz.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sortnnz.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sparbwslv.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sparfwslv.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/spars.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sqrtinv.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/sqrtinv.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/statsK.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/statsK.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/stepdif.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/symbchol.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/symbcholden.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/symbfwblk.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/symfctmex.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/symfctmex.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/tdet.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/triumtriu.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/trydif.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/updtransfo.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/urotorder.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/urotorder.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/vec.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/veccomplex.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/vecsym.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/vecsym.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/vectril.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/vectril.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/whichcpx.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/whichcpx.mexa64</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/widelen.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/wrapPcg.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/SeDuMi/SeDuMi_1_3/wregion.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/fast_unmix3.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/getFuzzyClusterMembership.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/Dependencies/maximalCliques/maximalCliques.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/postProcessMerging/determine_min_sc.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/postProcessMerging/recomputeFs.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/postProcessMerging/recompute_M.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/postProcessMerging/recompute_penalty_function.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/sliverDimEst/sliver_dim_est.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/estDimSliver.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/fast_unmix4.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/numericalWeightedSimplexMST.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/robustUnmixWeightedMST.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/runDoubleShift2.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/simplexfitErrorMultMSTWeighted.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/weightedSCUnmix.m</file>
+      <file>/home/troman/WSCUnmixFiles/WSCUnmixv2/src/unmixingCode/weightedSCUnmixMainSliver.m</file>
+      <file>${PROJECT_ROOT}/parseTCGADNARNA.m</file>
+      <file>${PROJECT_ROOT}/parseTCGARNAv3.m</file>
+      <file>${PROJECT_ROOT}/parseTCGAv4Data.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/runWSCUnmix/for_testing" name="readme.txt" optional="true">/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/runWSCUnmix/for_testing" name="run_runWSCUnmix.sh" optional="false">/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing/run_runWSCUnmix.sh</file>
+      <file location="${PROJECT_ROOT}/runWSCUnmix/for_testing" name="splash.png" optional="false">/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/runWSCUnmix/for_testing" name="runWSCUnmix" optional="false">/home/troman/WSCUnmixFiles/WSCUnmixv2/src/wrappers/runWSCUnmix/for_testing/runWSCUnmix</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/usr/local/MATLAB/R2015a</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>3.16.0-55-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
