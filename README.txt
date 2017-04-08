@@ -9,6 +9,16 @@ The src folder contains the core source code. The post processing folder contai$
 code to post-process inferences that are not simplicial complexes.  The extras $
 
 
+Standalone 
+-------------
+
+Included in the src/wrappers/runWSCUnmix/for_redistribution folder is a standalone deployable compiled from matlab.  The standalone application can be downloaded, and executed in the usual manner.  For Mac / *NIX systems, this is ./MyAppInstaller_web.install  The popup will walk the user through the installation process, including download and installation of the matlab runtime component (mrc) if not yet installed.  Following the installation procedure from the popup, one can execute the pipeline -- parsing, unmixing, merger and output -- in the following manner:
+./runWSCUnmix_run.sh <location of mrc> <directory of input files> -theta <thetaVecVal> -gamma <gammaVal> -sigma <sigmaVal> -kupper <k_upperVal> -output <outputDir> {-r,-d,-dr,-rd}
+
+Notes on execution -- all flags and values are required.  thetaVec is a vector of length 7 separated by commas but no spaces.  the final flag is a mode flag.  -dr and -rd refer to data that may be either RNA or DNA data in the directory, -d looks only for DNA formatted data, and -r looks only for RNA data.  DNA data is input as level 4 TCGA data, while RNA data is input as level 3 RNASeq data from TCGA.  For details on the file formats, reference cancer.gov.  These files are expected to be csvs, with .txt extensions.  The code includes logic to look recursively through child folders in the file structure.
+
+The output consists of a set of .txt and .csv files with prefixes specified by <outputDir> and suffixes relating to the output parameters: _V and _gene_list for instance.
+
 Dependencies
 -------------
 SeDuMi, MVES, 2-stage medoidshift clustering, maximal Cliques, and fuzzy membership clustering.
